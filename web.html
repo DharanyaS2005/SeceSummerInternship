@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, Helvetica, sans-serif
+        }
+        .main{
+            height: 70vh;
+            display: grid;
+            grid-template-columns: 1000px 200px;
+        }
+        .head{
+            display: flex;
+            flex-direction:row;
+            gap:20px;
+            justify-content: right;
+            background-color: #3d5afe;
+            color: white;
+            cursor: pointer;
+            padding-right: 30px;
+        }
+        .head button,input{
+            border-radius: 20px;
+            background-color: rgb(253, 254, 255);
+            border: none;
+            height:20px;
+            margin-top: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .layout p{
+            color: #3d5afe;
+            font-size: large;
+        }
+        .layout{
+             margin-left:30px;
+            margin-right:30px;
+            margin-top: 20px;
+            border-right:1px solid #3d5afe;
+        }
+        .layout h2{
+            width:100px;
+            background-color: #3d5afe;
+            color: white;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .layout img{
+            width: 800px;
+        }
+        .pro{
+            height:70vh;
+            width:280px;
+            background-color: #3d5afe;
+            color: white;
+            border-radius: 20px;
+            padding:10px;
+            padding-bottom: 10px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .pro h3 p{
+            text-align: left;
+        }
+        .pro h1{
+            text-align:center;
+            padding-bottom: 2px;
+            border-bottom: 1px solid white;
+        }
+        .pro button{
+            width:100%;
+            text-align: center;
+            border-radius: 20px;
+            background-color: rgb(253, 254, 255);
+            border: none;
+            height:30px;
+            margin-top: 10px;
+            cursor: pointer;
+            color: #3d5afe;
+            font-size: large;
+            font-weight: bold;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h3>Browse</h3>
+        <h3>Tags</h3>
+        <h3>About</h3>
+        <h3>Categories</h3>
+        <h3>|</h3>
+        <button type="submit">Upgrade to pro</button>
+        <h3>Login</h3>
+        <input type="text" placeholder="Search">
+    </div>
+    <div class="main">
+    <div class="layout" id="lay">
+        <h2>Layout</h2>
+        <p>Layouts, or floor plans for architects, reveal the relationships between multiple objects,
+             logics, and ideas within a space. Influencing the function, efficiency, and use of a space,
+              layouts are transformative strategies that attempt to organize the many complex factors 
+              required in arriving at a design. The following collections of standard layouts have been 
+              assembled for you as references that describe the sizes, proportions, measurements,
+               and relationships present in everyday spaces. We will continue to grow and update
+                these guides to further illustrate the diversity of approaches used in organizing 
+                and designing floor plans and layouts for various programmatic functions of space.</p>
+                <img src="E:\ModernFullstack\img.jpg">
+    </div>
+    <div class="pro">
+<h1>Pro</h1>
+<p>Upgrade to Dimensions Pro and access additional features and perks throughout the library including:</p>
+<h3>2D Downloads</h3>
+<h3>3D Downloads</h3>
+<h3>Advertisement Free</h3>
+<h3>Easy Download Access</h3>
+<h3>Support More Content</h3>
+<h1></h1>
+<button type="submit">Subscribe to Pro</button>
+    </div>
+    </div>
+        
+    
+</body>
+</html>
