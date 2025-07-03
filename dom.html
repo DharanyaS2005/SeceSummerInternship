@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning Js</h1>
+    <h1>Modern Fullstack</h1>
+    <p id="a" class="ab">hello</p>
+    <span class="b">class selector</span>
+
+    <script>
+        //Selector 5 types
+        //1.Tag Selector
+        const h=window.document.getElementsByTagName("h1");
+        console.log(h[0]);
+        //2.Id selector
+        const i= document.getElementById("a");
+        console.log(i);
+        //3.Class selector
+        const c=document.getElementsByClassName("b");
+        console.log(c);
+        //4.Query Selector
+        const d=document.querySelector("h1")
+        const d3=document.querySelectorAll("h1")
+        const d1=document.querySelector("#a")
+        const d2=document.querySelector(".b")
+        console.log(d)
+        console.log(d1)
+        console.log(d2)
+        console.log(d3)
+
+
+        //read&write
+        console.log(d.textContent)
+        i.textContent="DOM"
+
+        //styling
+        i.style.color="red"
+
+        //add and remove classlist
+        i.classList.add("qw")
+        //i.classList.remove("as")
+        //i.clasList.toggle(as)
+        i.classList.toggle("as1")
+
+        const aa=document.createElement("h2");
+        aa.textContent="added from js"
+        document.body.appendChild(aa)
+
+    </script>
+</body>
+</html>
