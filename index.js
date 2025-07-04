@@ -47,3 +47,79 @@ function add(p1,p2){
     console.log(p1+p2)
 }
 add(5,6);
+
+
+//first sync part is executed and then go for Async part
+
+let b1="Result is ready";
+console.log(b1);
+
+//async part
+setTimeout(()=>{
+    console.log("after some time");
+},2000)
+
+
+setTimeout(()=>{
+    console.log("1st");
+    setTimeout(()=>{
+        console.log("2nd");
+        setTimeout(()=>{
+            console.log("3rd")
+        },2000)
+    },2000)
+},2000)
+var a=10;
+console.log(a)
+
+let mypromise=new Promise((resolve,reject)=>{
+    let success=false;
+    if(success){
+        resolve("I have to give treat");
+    }else{
+        reject("will not");
+    }
+});
+mypromise.then((q)=> console.log(q)).catch((w)=>console.log(w));
+
+const handlePromise=async()=>{
+   try{
+     const a=await mypromise;
+    console.log(a);
+   }
+   catch(e){
+     console.log("error from async",e);
+   }
+   finally{
+     console.log("it will run in everycase");
+   }
+}
+
+handlePromise();
+
+
+
+const fetchData=async()=>{
+    try{
+    const response=await fetch("https://dummyjson.com/products")
+    console.log(response);
+    if(response.ok){
+        const data= await response.json();
+        console.log(data)
+    }
+}
+catch(err){
+    console.log(err);
+}
+};
+fetchData();
+
+
+setInterval(()=>{
+    let z=1;
+    console.log(++z);
+},3000)
+
+//[]+[] String
+//[]+{} Array of objects
+//{}+[] 0
